@@ -70,14 +70,14 @@ public class AppUser {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof AppUser)) return false;
+        if (o == null || getClass() != o.getClass()) return false;
         AppUser appUser = (AppUser) o;
-        return isActive() == appUser.isActive() && getId().equals(appUser.getId()) && getUserName().equals(appUser.getUserName()) && getPassWord().equals(appUser.getPassWord()) && getRole() == appUser.getRole();
+        return active == appUser.active && Objects.equals(id, appUser.id) && Objects.equals(userName, appUser.userName) && role == appUser.role;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getUserName(), getPassWord(), isActive(), getRole());
+        return Objects.hash(id, userName, active, role);
     }
 
     @Override
