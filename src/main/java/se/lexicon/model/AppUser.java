@@ -7,9 +7,9 @@ public class AppUser {
     private String userName;
     private String passWord;
     private boolean active;
-    private roles role;
+    private Roles role;
 
-    public AppUser(Integer id, String userName, String passWord, boolean active, roles role) {
+    public AppUser(Integer id, String userName, String passWord, boolean active, Roles role) {
         setId(id);
         setUserName(userName);
         setPassWord(passWord);
@@ -17,7 +17,7 @@ public class AppUser {
         setRole(role);
     }
 
-    public AppUser( String userName, String passWord,roles role) {
+    public AppUser( String userName, String passWord,Roles role) {
         setUserName(userName);
         setPassWord(passWord);
         this.role = role;
@@ -58,12 +58,12 @@ public class AppUser {
         this.active = active;
     }
 
-    public roles getRole() {
+    public Roles getRoles() {
         return role;
     }
 
-    public void setRole(roles role) {
-        if(role == null)role =roles.ROLE_USER;
+    public void setRole(Roles role) {
+        if(role == null)role =Roles.ROLE_USER;
         this.role = role;
     }
 
