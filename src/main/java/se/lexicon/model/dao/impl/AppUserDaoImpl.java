@@ -25,7 +25,6 @@ public class AppUserDaoImpl implements AppUserDao {
         @Override
         public AppUser create(AppUser appUser) {
             if (appUser == null) throw new IllegalArgumentException("appUser was null");
-            // check -> the username must not be duplicate
             appUser.setId(AppUserIdSequencer.nextId());
             storage.add(appUser);
             return appUser;
