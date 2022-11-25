@@ -1,5 +1,6 @@
 package se.lexicon.model.dao.impl;
 import se.lexicon.model.Person;
+import se.lexicon.model.TodoItem;
 import se.lexicon.model.dao.PersonDao;
 import se.lexicon.model.dao.impl.sequencer.PersonIdSequencer;
 
@@ -46,6 +47,15 @@ public class PersonDaoImpl implements PersonDao {
 
     @Override
     public void update(Person model) {
+        if (model == null) throw new IllegalArgumentException("model data was null");
+        for (Person original : storage) {
+            if (original.getId().equals(model.getId())) {
+                original.setFirstName(model.getFirstName());
+                original.setLastName(model.getLastName());
+                break;
+            }
+        }
+
     }
 
     @Override
