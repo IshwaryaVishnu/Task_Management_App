@@ -46,16 +46,16 @@ public class ConsoleUI {
         String username = getString();
 
         System.out.println("Password:");
-        String pwd = getString();
+        String password = getString();
 
-        AppUser appUserData = new AppUser(username, pwd, Roles.ROLE_USER);
+        AppUser appUserData = new AppUser(username, password, Roles.ROLE_USER);
 
         System.out.println("FirstName:");
-        String fn = getString();
+        String firstname = getString();
 
         System.out.println("LastName:");
-        String ln = getString();
-        Person personData = new Person(fn, ln, appUserData);
+        String lastname = getString();
+        Person personData = new Person(firstname,lastname , appUserData);
 
         return personData;
 
