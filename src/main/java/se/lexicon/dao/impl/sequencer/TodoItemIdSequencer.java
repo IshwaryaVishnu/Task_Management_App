@@ -1,4 +1,4 @@
-package se.lexicon.model.dao.impl.sequencer;
+package se.lexicon.dao.impl.sequencer;
 
 public class TodoItemIdSequencer {
     private static int sequencer = 1000;

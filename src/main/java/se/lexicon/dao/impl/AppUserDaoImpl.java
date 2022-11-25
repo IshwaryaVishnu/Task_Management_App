@@ -1,9 +1,9 @@
-package se.lexicon.model.dao.impl;
+package se.lexicon.dao.impl;
 
 import se.lexicon.model.AppUser;
 import se.lexicon.model.Roles;
-import se.lexicon.model.dao.AppUserDao;
-import se.lexicon.model.dao.impl.sequencer.AppUserIdSequencer;
+import se.lexicon.dao.AppUserDao;
+import se.lexicon.dao.impl.sequencer.AppUserIdSequencer;
 
 import java.util.ArrayList;
 import java.util.List;

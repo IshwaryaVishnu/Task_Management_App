@@ -1,4 +1,4 @@
-package se.lexicon.model.dao;
+package se.lexicon.dao;
 
 
 import java.util.List;

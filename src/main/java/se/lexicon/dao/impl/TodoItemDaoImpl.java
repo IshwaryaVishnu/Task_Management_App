@@ -1,8 +1,7 @@
-package se.lexicon.model.dao.impl;
-import se.lexicon.model.AppUser;
+package se.lexicon.dao.impl;
 import se.lexicon.model.TodoItem;
-import se.lexicon.model.dao.TodoItemDao;
-import se.lexicon.model.dao.impl.sequencer.TodoItemIdSequencer;
+import se.lexicon.dao.TodoItemDao;
+import se.lexicon.dao.impl.sequencer.TodoItemIdSequencer;
 
 import java.util.ArrayList;
 import java.util.List;

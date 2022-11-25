@@ -1,4 +1,4 @@
-package se.lexicon.model.dao.impl.sequencer;
+package se.lexicon.dao.impl.sequencer;
 
 public class PersonIdSequencer {
     private static int sequencer = 500;
